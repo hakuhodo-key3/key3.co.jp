@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Editor / OS
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Working files (not part of deliverable)
+アーカイブ.zip
+*.pdf
