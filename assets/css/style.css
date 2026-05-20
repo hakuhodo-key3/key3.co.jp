@@ -79,10 +79,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   min-height:60vh;
 }
 .hero-logo-deco{
-  position:absolute;left:auto;right:-14%;top:50%;transform:translateY(-50%);
+  position:absolute;left:auto;right:-5%;top:50%;transform:translateY(-50%);
   width:42%;max-width:560px;max-height:60vh;height:auto;
   opacity:1;pointer-events:none;z-index:0;
-  filter:sepia(1) saturate(2.2) hue-rotate(345deg) brightness(1.05);
   object-fit:contain;
 }
 @media(max-width:880px){.hero-logo-deco{display:none;}}
