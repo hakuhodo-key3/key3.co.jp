@@ -47,7 +47,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   height:72px;max-width:var(--max);margin:0 auto;padding:0 40px;
 }
 .nav-logo{display:flex;align-items:center;text-decoration:none;}
-.nav-logo img{height:32px;width:auto;}
+.nav-logo img{height:48px;width:auto;}
 .nav-toggle{
   display:none;background:none;border:none;cursor:pointer;
   flex-direction:column;gap:5px;padding:8px;
@@ -157,7 +157,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .sec-dark .sec-lead{color:rgba(255,255,255,.78);}
 
 /* ─── STRENGTHS ─── */
-.strengths-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+.strengths-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
 .strength{background:var(--bg);padding:48px 36px;}
 .strength-num{
   font-family:'Inter',sans-serif;
@@ -175,7 +175,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 @media(max-width:880px){.strengths-grid{grid-template-columns:1fr;}}
 
 /* ─── ABOUT ─── */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.about-grid{display:grid;grid-template-columns:1fr;gap:80px;align-items:start;}
 .about-body p{
   font-size:14px;line-height:2;color:var(--ink-2);margin-bottom:18px;
 }
@@ -370,6 +370,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
   .company-row{grid-template-columns:1fr;gap:8px;}
 }
 
+/* ─── PARTNERSHIP ─── */
+#partnership .sec-lead{max-width:none;}
+
 /* ─── CONTACT ─── */
 .contact-sec{
   background:var(--ink);color:var(--bg);
@@ -405,10 +408,12 @@ footer{
   display:grid;grid-template-columns:1fr auto;gap:48px;align-items:start;
   padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.08);
 }
-.footer-brand img{height:32px;width:auto;margin-bottom:12px;filter:brightness(0) invert(1);}
+.footer-brand img{height:64px;width:auto;margin-bottom:12px;filter:brightness(0) invert(1);}
 .footer-sub{
   font-size:11px;color:rgba(255,255,255,.5);letter-spacing:.06em;
 }
+.footer-sub-link{display:inline-block;margin-top:28px;}
+.footer-brand img.footer-sub-logo{height:20px;margin-bottom:0;display:block;}
 .footer-nav{display:flex;gap:36px;flex-wrap:wrap;}
 .footer-nav a{
   font-size:13px;color:rgba(255,255,255,.82);letter-spacing:.02em;
@@ -418,7 +423,12 @@ footer{
 .footer-copy{
   margin-top:24px;font-family:'Inter',sans-serif;
   font-size:11px;color:rgba(255,255,255,.5);letter-spacing:.06em;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
 }
+.footer-privacy{
+  color:rgba(255,255,255,.7);text-decoration:none;transition:color .15s;
+}
+.footer-privacy:hover,.footer-privacy:focus-visible{color:#c9a96e;}
 @media(max-width:720px){
   .footer-grid{grid-template-columns:1fr;gap:32px;}
   .footer-nav{gap:20px 28px;}
